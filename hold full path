@@ -1,1 +1,291 @@
+###
+Startpoint: fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_next_header_offset_r5_reg_3_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_27___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_26___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_25___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_24_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: cts_buf_207351866152/X
+  Path Group: core_clk
+  Path Type: min
+  Scenario: hold_func@FF0p88v125c_cbest
+  Sigma: 3.0
+
+  Point                      Fanout   Cap   DTrans  Trans   Derate  Delta    Incr      Path
+  -------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                               0.000     0.000
+  clock network delay (propagated)                                         0.261     0.261
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_next_header_offset_r5_reg_3_/CK (HSBSVT08_FSDPMQ_V2Y2_2)
+                                                   0.018                   0.000     0.261 r
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_next_header_offset_r5_reg_3_/Q (HSBSVT08_FSDPMQ_V2Y2_2) <-
+                                                   0.010   1.000           0.034 &   0.295 f
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_next_header_offset_r5[3] (net)
+                               4   0.003 
+  U81592/A2 (HSBLVT08_ND2_CB_2)           -0.001   0.012   1.000  -0.000   0.003 &   0.297 f
+  U81592/X (HSBLVT08_ND2_CB_2)                     0.021   1.000           0.014 &   0.311 r
+  n15490 (net)                12   0.008 
+  U25895/B2 (HSBSVT11_OAI22_MM_1)          0.000   0.021   1.000   0.000   0.001 &   0.312 r
+  U25895/X (HSBSVT11_OAI22_MM_1)                   0.011   1.000           0.011 &   0.323 f
+  n15093 (net)                 1   0.000 
+  U25926/A2 (HSBSVT11_OAOI211_CB_1)        0.000   0.011   1.000   0.000   0.000 &   0.323 f
+  U25926/X (HSBSVT11_OAOI211_CB_1)                 0.013   1.000           0.018 &   0.341 r
+  n15798 (net)                 2   0.001 
+  U25927/CK (HSBSVT11_INV_CK_1)           -0.001   0.013   1.000  -0.000  -0.000 &   0.341 r
+  U25927/X (HSBSVT11_INV_CK_1)                     0.006   1.000           0.006 &   0.347 f
+  n15095 (net)                 1   0.000 
+  U25928/B (HSBSVT11_AOAI211_CB_1)         0.000   0.006   1.000   0.000   0.000 &   0.347 f
+  U25928/X (HSBSVT11_AOAI211_CB_1)                 0.008   1.000           0.007 &   0.354 r
+  n15096 (net)                 1   0.000 
+  U110220/B (HSBSVT11_OAI21_V1_1)          0.000   0.008   1.000   0.000   0.000 &   0.354 r
+  U110220/X (HSBSVT11_OAI21_V1_1)                  0.051   1.000           0.029 &   0.382 f
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_eng2core_header_data_10_ (net)
+                               2   0.010 
+  U124368/B2 (HSBLVT08_AOI22_MM_1)        -0.011   0.052   1.000  -0.005   0.000 &   0.383 f
+  U124368/X (HSBLVT08_AOI22_MM_1)                  0.010   1.000           0.009 &   0.392 r
+  n104488 (net)                1   0.000 
+  U124370/A3 (HSBSVT11_ND4_MM_1)           0.000   0.010   1.000   0.000   0.000 &   0.392 r
+  U124370/X (HSBSVT11_ND4_MM_1)                    0.026   1.000           0.018 &   0.410 f
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_muxed_data_after_or_9__24_ (net)
+                               1   0.002 
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_27___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_26___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_25___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_24_/D3 (HSBSVT11_FSDPQM4SS_V2Y4_1)
+                                          -0.008   0.027   1.000  -0.004  -0.003 &   0.407 f
+  data arrival time                                                                  0.407
+
+  clock core_clk (rise edge)                                               0.000     0.000
+  clock network delay (propagated)                                         0.267     0.267
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_27___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_26___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_25___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_24_/CK (HSBSVT11_FSDPQM4SS_V2Y4_1)
+                                                                                     0.267 r
+  clock reconvergence pessimism                                           -0.011     0.256
+  inter-clock uncertainty                                                  0.010     0.266
+  library hold time                                        1.000           0.028     0.294
+  data required time                                                                 0.294
+  -------------------------------------------------------------------------------------------
+  data required time                                                                 0.294
+  data arrival time                                                                 -0.407
+  -------------------------------------------------------------------------------------------
+  statistical adjustment                                                   0.006     0.119
+  slack (MET)                                                                        0.119
+
+
+
+
+#########################
+  Startpoint: fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_next_header_offset_r5_reg_3_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_27___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_26___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_25___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_24_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: cts_buf_207351866152/X
+  Path Group: core_clk
+  Path Type: min
+  Scenario: hold_func@FF0p88v125c_cbest
+  Sigma: 3.0
+
+  Point                      Fanout   Cap   DTrans  Trans   Derate  Delta    Incr      Path
+  -------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                               0.000     0.000
+  clock source latency                                                     0.000     0.000
+  clk (in)                                         0.004                   0.001 &   0.001 r
+  clk (net)                    2   0.002 
+  cts_buf_211891866606/A (HSBULT08_BUF_S_8)
+                                           0.000   0.004   1.000   0.000   0.000 &   0.001 r
+  cts_buf_211891866606/X (HSBULT08_BUF_S_8)        0.014   1.000           0.011 &   0.013 r
+  ctsbuf_net_18581749449 (net)
+                               1   0.027 
+  cts_buf_211841866601/A (HSBULT08_BUF_S_10)
+                                           0.000   0.016   1.000   0.000   0.002 &   0.015 r
+  cts_buf_211841866601/X (HSBULT08_BUF_S_10)       0.019   1.000           0.014 &   0.029 r
+  ctsbuf_net_18571749448 (net)
+                               2   0.043 
+  cts_buf_211791866596/A (HSBULT08_BUF_S_10)
+                                           0.000   0.025   1.000   0.000   0.006 &   0.035 r
+  cts_buf_211791866596/X (HSBULT08_BUF_S_10)       0.013   1.000           0.014 &   0.049 r
+  ctsbuf_net_18561749447 (net)
+                               3   0.028 
+  i_fi_stage_cfg_top_X_fi_stage_cif_top_X_fi_stage_cif_register_parsing_X_power_down_cg_X_I_LB_ICG_X_I_LB_ICG/CK (HSBULT08_CKGTPLT_V5Y2_6)
+                                           0.000   0.015   1.000   0.000   0.003 &   0.052 r
+  i_fi_stage_cfg_top_X_fi_stage_cif_top_X_fi_stage_cif_register_parsing_X_power_down_cg_X_I_LB_ICG_X_I_LB_ICG/Q (HSBULT08_CKGTPLT_V5Y2_6)
+                                                   0.008   1.000           0.025 &   0.078 r
+  pd_clk (net)                 3   0.005 
+  cto_buf_cln_1875162/A (HSBULT08_BUF_S_10)
+                                           0.000   0.009   1.000   0.000   0.001 &   0.079 r
+  cto_buf_cln_1875162/X (HSBULT08_BUF_S_10)        0.016   1.000           0.013 &   0.091 r
+  cts5430 (net)                1   0.038 
+  cts_buf_207471866164/A (HSBULT08_BUF_S_10)
+                                           0.000   0.020   1.000   0.000   0.005 &   0.096 r
+  cts_buf_207471866164/X (HSBULT08_BUF_S_10)       0.016   1.000           0.014 &   0.110 r
+  ctsbuf_net_17821749373 (net)
+                               2   0.035 
+  cts_buf_207351866152/A (HSBULT08_BUF_S_10)
+                                           0.000   0.021   1.000   0.000   0.006 &   0.115 r
+  cts_buf_207351866152/X (HSBULT08_BUF_S_10)       0.006   1.000           0.011 &   0.126 r
+  ctsbuf_net_17781749369 (net)
+                               2   0.028 
+  cts_inv_207111866128/A (HSBULT08_INV_S_10)
+                                           0.000   0.069   1.000   0.000   0.026 &   0.152 r
+  cts_inv_207111866128/X (HSBULT08_INV_S_10)       0.034   1.000           0.022 &   0.174 f
+  ctsbuf_net_17691749360 (net)
+                               3   0.040 
+  cts_inv_206511866068/A (HSBULT08_INV_S_10)
+                                           0.000   0.039   1.000   0.000   0.006 &   0.180 f
+  cts_inv_206511866068/X (HSBULT08_INV_S_10)       0.019   1.000           0.010 &   0.191 r
+  ctsbuf_net_17481749339 (net)
+                               4   0.023 
+  cts_inv_204151865832/A (HSBULT08_INV_S_8)
+                                           0.000   0.021   1.000   0.000   0.002 &   0.193 r
+  cts_inv_204151865832/X (HSBULT08_INV_S_8)        0.014   1.000           0.010 &   0.203 f
+  ctsbuf_net_17061749297 (net)
+                               2   0.016 
+  cts_inv_191761864593/A (HSBULT08_INV_S_4)
+                                           0.000   0.015   1.000   0.000   0.002 &   0.205 f
+  cts_inv_191761864593/X (HSBULT08_INV_S_4)        0.010   1.000           0.007 &   0.212 r
+  ctsbuf_net_14581749049 (net)
+                               2   0.005 
+  cto_buf_drc_1870026/A (HSBULT08_BUF_S_6)
+                                           0.000   0.010   1.000   0.000   0.001 &   0.212 r
+  cto_buf_drc_1870026/X (HSBULT08_BUF_S_6)         0.020   1.000           0.015 &   0.227 r
+  cts385 (net)                13   0.027 
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_header_shifter_X_clk_gate_in_eq_data_bus_r_reg_1023__28/latch/CK (HSBULT08_CKGTPLT_V5Y2_6)
+                                           0.000   0.022   1.000   0.000   0.002 &   0.229 r
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_header_shifter_X_clk_gate_in_eq_data_bus_r_reg_1023__28/latch/Q (HSBULT08_CKGTPLT_V5Y2_6)
+                                                   0.016   1.000           0.030 &   0.259 r
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_header_shifter_X_clk_gate_in_eq_data_bus_r_reg_1023__28/ENCLK (net)
+                              32   0.019 
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_next_header_offset_r5_reg_3_/CK (HSBSVT08_FSDPMQ_V2Y2_2)
+                                           0.000   0.018   1.000   0.000   0.001 &   0.261 r
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_next_header_offset_r5_reg_3_/Q (HSBSVT08_FSDPMQ_V2Y2_2) <-
+                                                   0.010   1.000           0.034 &   0.295 f
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_next_header_offset_r5[3] (net)
+                               4   0.003 
+  U81592/A2 (HSBLVT08_ND2_CB_2)           -0.001   0.012   1.000  -0.000   0.003 &   0.297 f
+  U81592/X (HSBLVT08_ND2_CB_2)                     0.021   1.000           0.014 &   0.311 r
+  n15490 (net)                12   0.008 
+  U25895/B2 (HSBSVT11_OAI22_MM_1)          0.000   0.021   1.000   0.000   0.001 &   0.312 r
+  U25895/X (HSBSVT11_OAI22_MM_1)                   0.011   1.000           0.011 &   0.323 f
+  n15093 (net)                 1   0.000 
+  U25926/A2 (HSBSVT11_OAOI211_CB_1)        0.000   0.011   1.000   0.000   0.000 &   0.323 f
+  U25926/X (HSBSVT11_OAOI211_CB_1)                 0.013   1.000           0.018 &   0.341 r
+  n15798 (net)                 2   0.001 
+  U25927/CK (HSBSVT11_INV_CK_1)           -0.001   0.013   1.000  -0.000  -0.000 &   0.341 r
+  U25927/X (HSBSVT11_INV_CK_1)                     0.006   1.000           0.006 &   0.347 f
+  n15095 (net)                 1   0.000 
+  U25928/B (HSBSVT11_AOAI211_CB_1)         0.000   0.006   1.000   0.000   0.000 &   0.347 f
+  U25928/X (HSBSVT11_AOAI211_CB_1)                 0.008   1.000           0.007 &   0.354 r
+  n15096 (net)                 1   0.000 
+  U110220/B (HSBSVT11_OAI21_V1_1)          0.000   0.008   1.000   0.000   0.000 &   0.354 r
+  U110220/X (HSBSVT11_OAI21_V1_1)                  0.051   1.000           0.029 &   0.382 f
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_eng2core_header_data_10_ (net)
+                               2   0.010 
+  U124368/B2 (HSBLVT08_AOI22_MM_1)        -0.011   0.052   1.000  -0.005   0.000 &   0.383 f
+  U124368/X (HSBLVT08_AOI22_MM_1)                  0.010   1.000           0.009 &   0.392 r
+  n104488 (net)                1   0.000 
+  U124370/A3 (HSBSVT11_ND4_MM_1)           0.000   0.010   1.000   0.000   0.000 &   0.392 r
+  U124370/X (HSBSVT11_ND4_MM_1)                    0.026   1.000           0.018 &   0.410 f
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_muxed_data_after_or_9__24_ (net)
+                               1   0.002 
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_27___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_26___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_25___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_24_/D3 (HSBSVT11_FSDPQM4SS_V2Y4_1)
+                                          -0.008   0.027   1.000  -0.004  -0.003 &   0.407 f
+  data arrival time                                                                  0.407
+
+  clock core_clk (rise edge)                                               0.000     0.000
+  clock source latency                                                     0.000     0.000
+  clk (in)                                         0.004                   0.001 &   0.001 r
+  clk (net)                    2   0.003 
+  cts_buf_211891866606/A (HSBULT08_BUF_S_8)
+                                           0.000   0.004   1.000   0.000   0.001 &   0.002 r
+  cts_buf_211891866606/X (HSBULT08_BUF_S_8)        0.014   1.074           0.013 &   0.014 r
+  ctsbuf_net_18581749449 (net)
+                               1   0.027 
+  cts_buf_211841866601/A (HSBULT08_BUF_S_10)
+                                           0.000   0.016   1.000   0.000   0.004 &   0.018 r
+  cts_buf_211841866601/X (HSBULT08_BUF_S_10)       0.019   1.074           0.015 &   0.033 r
+  ctsbuf_net_18571749448 (net)
+                               2   0.044 
+  cts_buf_211791866596/A (HSBULT08_BUF_S_10)
+                                           0.000   0.025   1.000   0.000   0.008 &   0.041 r
+  cts_buf_211791866596/X (HSBULT08_BUF_S_10)       0.013   1.074           0.015 &   0.057 r
+  ctsbuf_net_18561749447 (net)
+                               3   0.028 
+  i_fi_stage_cfg_top_X_fi_stage_cif_top_X_fi_stage_cif_register_parsing_X_power_down_cg_X_I_LB_ICG_X_I_LB_ICG/CK (HSBULT08_CKGTPLT_V5Y2_6)
+                                           0.000   0.015   1.000   0.000   0.004 &   0.061 r
+  i_fi_stage_cfg_top_X_fi_stage_cif_top_X_fi_stage_cif_register_parsing_X_power_down_cg_X_I_LB_ICG_X_I_LB_ICG/Q (HSBULT08_CKGTPLT_V5Y2_6)
+                                                   0.008   1.074           0.028 &   0.088 r
+  pd_clk (net)                 3   0.007 
+  cto_buf_cln_1875162/A (HSBULT08_BUF_S_10)
+                                           0.000   0.009   1.000   0.000   0.001 &   0.089 r
+  cto_buf_cln_1875162/X (HSBULT08_BUF_S_10)        0.016   1.074           0.013 &   0.103 r
+  cts5430 (net)                1   0.038 
+  cts_buf_207471866164/A (HSBULT08_BUF_S_10)
+                                           0.000   0.020   1.000   0.000   0.005 &   0.108 r
+  cts_buf_207471866164/X (HSBULT08_BUF_S_10)       0.016   1.074           0.015 &   0.123 r
+  ctsbuf_net_17821749373 (net)
+                               2   0.037 
+  cts_buf_207351866152/A (HSBULT08_BUF_S_10)
+                                           0.000   0.021   1.000   0.000   0.006 &   0.130 r
+  cts_buf_207351866152/X (HSBULT08_BUF_S_10)       0.006   1.074           0.012 &   0.142 r
+  ctsbuf_net_17781749369 (net)
+                               2   0.030 
+  cts_inv_207131866130/A (HSBULT08_INV_S_8)
+                                           0.000   0.008   1.000   0.000   0.001 &   0.143 r
+  cts_inv_207131866130/X (HSBULT08_INV_S_8)        0.023   1.078           0.015 &   0.158 f
+  ctsbuf_net_17711749362 (net)
+                               3   0.035 
+  cts_inv_206591866076/A (HSBULT08_INV_S_10)
+                                           0.000   0.025   1.000   0.000   0.004 &   0.162 f
+  cts_inv_206591866076/X (HSBULT08_INV_S_10)       0.016   1.074           0.010 &   0.172 r
+  ctsbuf_net_17561749347 (net)
+                               2   0.028 
+  cts_inv_204041865821/A (HSBULT08_INV_S_10)
+                                           0.000   0.020   1.000   0.000   0.005 &   0.176 r
+  cts_inv_204041865821/X (HSBULT08_INV_S_10)       0.021   1.078           0.015 &   0.191 f
+  ctsbuf_net_16951749286 (net)
+                               5   0.038 
+  cts_inv_192061864623/A (HSBULT08_INV_S_10)
+                                           0.000   0.027   1.000   0.000   0.004 &   0.194 f
+  cts_inv_192061864623/X (HSBULT08_INV_S_10)       0.008   1.074           0.004 &   0.199 r
+  ctsbuf_net_14881749079 (net)
+                               2   0.004 
+  cto_buf_drc_1869987/A (HSBULT08_BUF_S_10)
+                                           0.000   0.008   1.000   0.000   0.001 &   0.199 r
+  cto_buf_drc_1869987/X (HSBULT08_BUF_S_10)        0.009   1.074           0.011 &   0.210 r
+  cts346 (net)                 9   0.017 
+  cts_inv_178381863255/A (HSBULT08_INV_S_10)
+                                           0.000   0.011   1.000   0.000   0.002 &   0.212 r
+  cts_inv_178381863255/X (HSBULT08_INV_S_10)       0.013   1.078           0.010 &   0.222 f
+  ctsbuf_net_13461748937 (net)
+                               8   0.023 
+  cts_inv_143171859734/A (HSBULT08_INV_S_8)
+                                           0.000   0.014   1.000   0.000   0.002 &   0.224 f
+  cts_inv_143171859734/X (HSBULT08_INV_S_8)        0.005   1.074           0.004 &   0.228 r
+  ctsbuf_net_6971748288 (net)
+                               1   0.002 
+  cto_buf_drc_1874508/A (HSBULT08_BUF_S_2)
+                                           0.000   0.005   1.000   0.000   0.000 &   0.228 r
+  cto_buf_drc_1874508/X (HSBULT08_BUF_S_2)         0.009   1.074           0.010 &   0.238 r
+  cts4866 (net)                2   0.003 
+  buf_drc_cln1874510/A (HSBULT08_BUF_S_4)
+                                           0.000   0.009   1.000   0.000   0.001 &   0.238 r
+  buf_drc_cln1874510/X (HSBULT08_BUF_S_4)          0.025   1.074           0.015 &   0.253 r
+  cts4868 (net)                8   0.023 
+  fi_stage_X_fi_stage_i_1_X_fi_gen_3__i_fi_engine_X_i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_27___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_26___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_25___i_fi_engine_X_i_fi_fbg_X_i_gen_multicycle_debug_data_mux_X_gen_debug_muxed_data_to_multicycle_reg_24_/CK (HSBSVT11_FSDPQM4SS_V2Y4_1)
+                                           0.000   0.053   1.000   0.000   0.014 &   0.267 r
+  clock reconvergence pessimism                                           -0.011     0.256
+  inter-clock uncertainty                                                  0.010     0.266
+  library hold time                                        1.000           0.028     0.294
+  data required time                                                                 0.294
+  -------------------------------------------------------------------------------------------
+  data required time                                                                 0.294
+  data arrival time                                                                 -0.407
+  -------------------------------------------------------------------------------------------
+  statistical adjustment                                                   0.006     0.119
+  slack (MET)                                                                        0.119
+
+  Derate Summary Report
+  ------------------------------------------------------------------------------------
+  total derate : required time                                            -0.014 
+  total derate : arrival time                                              0.001 
+  ------------------------------------------------------------------------------------
+  total derate : slack                                                     0.015 
+
+  slack (with derating applied) (MET)                                      0.119 
+  clock reconvergence pessimism (due to derating)                         -0.008 
+  ------------------------------------------------------------------------------------
+  slack (with no derating) (MET)                                           0.127 
 
