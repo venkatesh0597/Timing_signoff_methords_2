@@ -1,1 +1,41 @@
+Number of routing layers = 19
+
+layer M0, dir Hor, min width = 0.014um, min space = 0.009um pitch = 0.028um
+
+layer M1, dir Ver, min width = 0.02um, min space = 0.014um pitch = 0.034um
+
+layer M2, dir Hor, min width = 0.02um, min space = 0.015um pitch = 0.035um
+
+layer M3, dir Ver, min width = 0.02um, min space = 0.022um pitch = 0.042um
+
+layer M4, dir Hor, min width = 0.02um, min space = 0.022um pitch = 0.042um
+
+layer M5, dir Ver, min width = 0.038um, min space = 0.038um pitch = 0.076um
+
+layer M6, dir Hor, min width = 0.038um, min space = 0.038um pitch = 0.076um
+
+layer M7, dir Ver, min width = 0.038um, min space = 0.038um pitch = 0.076um
+
+layer M8, dir Hor, min width = 0.038um, min space = 0.038um pitch = 0.076um
+
+layer M9, dir Ver, min width = 0.038um, min space = 0.038um pitch = 0.076um
+
+layer M10, dir Hor, min width = 0.038um, min space = 0.038um pitch = 0.076um
+
+layer M11, dir Ver, min width = 0.038um, min space = 0.038um pitch = 0.076um
+
+layer M12, dir Hor, min width = 0.062um, min space = 0.064um pitch = 0.126um
+
+layer M13, dir Ver, min width = 0.062um, min space = 0.064um pitch = 0.126um
+
+layer M14, dir Hor, min width = 0.126um, min space = 0.126um pitch = 0.252um
+
+layer M15, dir Ver, min width = 0.126um, min space = 0.126um pitch = 0.252um
+
+layer M16, dir Hor, min width = 0.45um, min space = 0.45um pitch = 0.9um
+
+layer M17, dir Ver, min width = 0.45um, min space = 0.45um pitch = 0.9um
+
+layer AP, dir Hor, min width = 1.8um, min space = 1.8um pitch = 3.6um
+
 
