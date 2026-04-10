@@ -1,1 +1,32 @@
+Data  Tran initial count : 14k ; above 5ps : 13k ; top violated ; 184ps
+
+Guidelines for fixing data tran:
+First in the tran report check the margin of setup and hold there we will get the worst setup and hold for particular driver 
+Don’t's
+Then segregate separately sequential cells and delay buffers and inverters 
+If we are swapping the sequential cells then we may expect the clk tran because we are increasing the load of the clk buffer 
+Then swapping the delay buffers will leads to degrade the hold violation . 
+
+Checks before fixing the Data Tran 
+Net length 
+Fanout 
+Routing layer 
+Drive strength 
+
+Data Tran fixing method's:
+VT Swapping 
+Upsizing 
+Fan out splitting 
+On route buffering 
+Layer optimization [check for the track availability]
+Downsize the load of the driver 
+On route buffering [location based ]
+
+Strategy used : [Violations are segregated according to the magnitude ]
+If the net length is 120 microns if the driver is HDB*VT06*/BUF/INV > if swapping or upsizing it will reduce the magnitude it won't fix the violation for those cases HDB*06_CAQ*/BUF/INV are replaced because these buffers of 8X can drive 180microns of distance 
+If the magnitude is less 5 to 15ps only VT swaps is enough to fix the violations because increasing the drive strength will increase the area of the cell  
+If the net length is huge and driver also X10, X12 we can go for on route buffering we can add buffer in the middle of the net 
+If the net is routed with lower metal layers check for the track availability and route with higher metal layers 
+For sequential cells on route buffering fanout splitting is preferred 
+########
 
