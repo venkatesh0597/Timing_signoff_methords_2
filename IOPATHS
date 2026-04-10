@@ -1,1 +1,57 @@
+Startpoint: fi_stage_X_fi_stage_i_1_X_fi_gen_2__i_fi_engine_X_i_fi_engine_X_first_stage_i_fi_core_out_fifo_top_X_core_data_delay_reg_X_en_dly_last_in_chain_reg
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: fis2ic_eq_stage1_is_hw
+               (output port clocked by core_clk_v)
+  Path Group: REGOUT
+  Path Type: max
+  Scenario: setup_func@TT0p68v25c_cworst_T
+  Sigma: 3.0
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock core_clk (rise edge)                             0.000      0.000
+  clock network delay (propagated)                       0.413      0.413
+  fi_stage_X_fi_stage_i_1_X_fi_gen_2__i_fi_engine_X_i_fi_engine_X_first_stage_i_fi_core_out_fifo_top_X_core_data_delay_reg_X_en_dly_last_in_chain_reg/CK (HSBLVT08_FSDPQ_CBDY2_2)
+                                                         0.000      0.413 r
+  fi_stage_X_fi_stage_i_1_X_fi_gen_2__i_fi_engine_X_i_fi_engine_X_first_stage_i_fi_core_out_fifo_top_X_core_data_delay_reg_X_en_dly_last_in_chain_reg/Q (HSBLVT08_FSDPQ_CBDY2_2)
+                                                         0.044 &    0.457 r
+  SGI96_1844369/X (HSBLVT08_NR2_8)                       0.017 &    0.475 f
+  U103402/X (HSBULT08_ND2_6)                             0.010 &    0.485 r
+  BUFT_RR_1842856/X (HSBLVT08_BUF_M_12)                  0.017 &    0.502 r
+  U314187/X (HSBLVT11_AN3B_CB_2)                         0.055 &    0.557 r
+  U35951/X (HSBULT08_AOI21_6)                            0.023 &    0.580 f
+  U319836/X (HSBLVT08_NR3_CB_1)                          0.031 &    0.611 r
+  U156730/X (HSBLVT08_NR2_CB_1)                          0.024 &    0.636 f
+  U22021/X (HSBLVT08_AOAI211_4)                          0.016 &    0.652 r
+  U143166/X (HSBLVT08_ND2_MM_8)                          0.021 &    0.673 f
+  U28540/X (HSBLVT08_NR3_8)                              0.021 &    0.694 r
+  HFSBUF_777_524387/X (HSBLVT08_BUF_L_3)                 0.015 &    0.709 r
+  ropt_d_inst_1917930/X (HSBLVT08_BUF_SM_12)             0.017 &    0.726 r
+  eco12_xtalk_fix_18_11_12__11_18_0_cell_1/X (HSBLVT08_BUF_8)
+                                                         0.030 &    0.756 r
+  eco12_xtalk_fix_18_11_12__11_18_0_cell_0/X (HSBLVT08_BUF_12)
+                                                         0.028 &    0.784 r
+  ropt_d_inst_1917929/X (HSBLVT08_BUF_12)                0.023 &    0.807 r
+  eco12_xtalk_fix_18_11_12__11_18_1_cell_3/X (HSBLVT08_BUF_12)
+                                                         0.037 &    0.844 r
+  eco12_xtalk_fix_18_11_12__11_18_1_cell_2/X (HSBLVT08_BUF_CBMN_8)
+                                                         0.041 &    0.885 r
+  OUTPUT_BUF_fis2ic_eq_stage1_is_hw/X (HSBLVT08_BUF_CB_8)
+                                                         0.030 &    0.915 r
+  fis2ic_eq_stage1_is_hw (out)                           0.012 &    0.926 r
+  data arrival time                                                 0.926
+
+  clock core_clk_v (rise edge)                           0.833      0.833
+  clock network delay (ideal)                            0.345      1.178
+  clock reconvergence pessimism                          0.000      1.178
+  inter-clock uncertainty                               -0.035      1.143
+  output external delay                                 -0.417      0.726
+  data required time                                                0.726
+  ------------------------------------------------------------------------------
+  data required time                                                0.726
+  data arrival time                                                -0.926
+  ------------------------------------------------------------------------------
+  statistical adjustment                                 0.000     -0.200
+  slack (VIOLATED)                                                 -0.200
+#####
 
