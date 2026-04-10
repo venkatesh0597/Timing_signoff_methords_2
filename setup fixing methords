@@ -1,1 +1,60 @@
+Setup fixing methods:
+
+Do's in setup fixing:
+
+Swaps and upsize the combinational cells 
+Layer optimization 
+If the path is too long we can do rebuffering if the buffer INV logic is more .
+If any redundant buffering(Low drive strength buffer back to back added) is there we can remove intermediate BUF/INV (pair) and we can replace high drive strength buffers.
+Cell movement 
+Useful skew 
+Check for the cross talk delta by fixing cross talk it will improve tran and cell delay 
+If library setup time is positive if the endpoint reg is in higher drive strength we can reduce the drive strength so that library setup time will increase if library setup time increases Required time increases if RT increases its good for setup
+
+Dont's in setup fixing: 
+Don't swap the sequential cells for fixing the setup  (in few cases It will increase the load of the driver clock_pin).
+ ######
+Setup fixes 
+There are few setup hold critical paths 
+Where in setup it is violated by 24ps and hold side it has an margin of +0.023ps only 
+Setup violated corner:
+
+Setup fixes:
+Swapping 
+Upsizing 
+Layer optimization 
+Rebuffering 
+
+
+Note 
+There is an setup hold critical path in PT 
+Setup violated scenario : both_all_ss0p675v0c_cworst_T_0
+Same path hold Scenario: hold_all_ff0p825v0c_cbest_0
+Where setup is violated by -30ps and we have hold margin +40ps
+For this case its very hard to fix the setup because for setup fixing swapping and upsize has to be done but it degrades the hold as well because we don’t have enough hold margin .
+While am observing the comb cells of the path the tool added delay buffers to fix the hold (HDB54SVT03_DEL_R2V1_1 ) and setup violated 
+Because the delay offered by the delay cell in hold corner is 19 ps but in setup corner it offered  49ps 
+
+In general for hold fixing we need huge delay for a cell in hold scenario so we will be using low drive strength cells and lower VT cells like SVT, LVTLL 
+
+In this case the VT cells used to fix hold offers less delay in hold and huge delay in setup 
+So I have swapped SVT to ULT to fix the violation so therby I gained +25 ps in setup side for same cell where in hold side it degraded by 7 ps because of ult swapping the next delay buffer delay reduced by 5ps there by now setup of this path is fixed by without degrading hold 
+   
+####
+Path analysis:
+All the paths need to be analyzed in PNR stage 
+Violated paths needs to be analyzed whether there is scope for fixing in ECO or not 
+For few paths the path is too long and the path is fully optimized for such path I have checked margin for the N+1 path 
+After checking the margin  
+
+
+Setup fixing methods:
+Don't swap the sequential cells for fixing the setup  
+Swaps and upsize the combinational cells 
+Layer optimization 
+If the path is too long we can do rebuffering 
+If any redundant buffering is there we can remove intermediate BUF/INV (pair) and we can replace high drive strength buffers 
+If library setup time is positive if the endpoint reg is in higher drive strength we can reduce the drive strength so that library setup time will increase if library setup time increases Required time increases if RT increases its good for setup 
+
+ 
 
