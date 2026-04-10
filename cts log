@@ -1,1 +1,381 @@
+Cts starts from 
+clock_opt_design:
+The  clock_opt_design  command is used in place of ccopt_design nput DB is place_opt_design V2
+It performs clock concurrent opti mization (CCOpt) on the current loaded design in Innovus. CCOpt optimizes both the clock tree and the datapath to meet global timing constraints.
+
+
+
+*** clock_opt_design #1 [begin] ()
+*** Starting place_detail
+** Finished place_detail 
+Leaving CCOpt scope - CheckPlace.
+Begin checking placement
+Leaving CCOpt scope - CheckPlace done
+core_clk_v(1650.17MHz) core_clk(1650.17MHz) CK: assigning clock core_clk to net clk
+wrck_clk_v(100MHz) wrck_clk(100MHz) CK: assigning clock wrck_clk to net WRCK
+
+###
+* CTS #1 [begin] (clock_opt_design #1)
+CCOpt::Phase::PreparingToBalance
+Found 0 delaying pin insertion delay (0.000% of 200205 clock tree sinks
+Leaving CCOpt scope - optDesignGlobalRouteStep
+ Finished Early Global Route kernel
+##
+Validating CTS configuration
+Clock tree balancer configuration for clock_trees core_clk wrck_clk
+CCOpt::Phase::PreparingToBalance done
+##
+Preparing To Balance
+##
+CCOpt::Phase::Construction
+ Stage::Clustering..***
+
+During this step, CCOpt will build only a DRV-aware clock tree and will not balance the clocks
+
+
+Initialize for clustering.
+Initialize for clustering done. 
+Clustering clock_tree core_clk...
+Clustering clock_tree core_clk done.
+Clustering clock_tree wrck_clk...
+Clustering clock_tree wrck_clk done
+Legalizing clock trees
+##
+** Starting place_detail 
+* Finished place_detail 
+ Legalizing clock trees done.
+ Clustering done.
+ Removing clustering added virtual delays done
+CongRepair After Initial Clustering
+Leaving CCOpt scope - Early Global Route...
+Clock implementation routing.
+Started Early Global Route kernel
+Finished Early Global Route kernel
+Clock implementation routing done
+###
+* IncrReplace #1 [begin] (CTS #1 / clock_opt_design #1)
+Info: Enable timing driven in postCTS congRepair
+** Start incrementalPlace **
+ incrementalPlace Internal Loop 1 = 1
+14 iterations done 
+Move report: Timing Driven Placement moves 1555076 insts
+Finished Incremental Placement 
+** Starting place_detail
+** Finished place_detail
+*** Finished incrementalPlace 
+*** IncrReplace #1 [finish] (CTS #1 / clock_opt_design #1) 
+Stage::Clustering done***
+Stage::DRV Fixing.
+Fixing clock tree slew time and max cap violations
+Fixing clock tree slew time and max cap violations done
+Stage::DRV Fixing done.
+ Reducing insertion delay 1..
+Reducing insertion delay 1 done
+Removing longest path buffering
+ Stage::Insertion Delay Reduction done. 
+CCOpt::Phase::Construction done
+CCOpt::Phase::Implementation…
+Stage::Reducing Power… (it resize the clock buffer inv gates to recover power)
+Improving clock tree routing
+ Reducing clock tree power 1
+Resizing gates
+reducing clock tree power 1 done
+Reducing clock tree power 2.
+Reducing clock tree power 2 done
+Stage::Reducing Power done.
+##
+Stage::Balancing
+Improving subtree skew
+Approximately balancing
+Approximately balancing, wire and cell delays
+Approximately balancing, wire and cell delays, iteration 1..
+Approximately balancing, wire and cell delays, iteration 1 done.
+Approximately balancing, wire and cell delays, iteration 2...
+Approximately balancing, wire and cell delays, iteration 2 done.
+Approximately balancing, wire and cell delays done.
+Approximately balancing step done
+Stage::Balancing done
+##
+ Stage::Polishing…
+
+Stage::Polishing done
+** Starting place_detail
+** Finished place_detail 
+ Started Early Global Route kernel 
+Finished Early Global Route kernel
+
+CCOPT: Done with clock implementation routing.
+
+Calling post conditioning 
+Move Down
+
+         - Downsizing before DRV sizing
+         - DRV fixing with sizing
+         - Move to fanout
+         - Cloning
+eGRPC Fixing DRVs.
+ eGRPC Fixing DRVs done
+eGRPC done.
+Calling post conditioning for eGRPC done.
+ eGR Post Conditioning done.
+
+** Starting place_detail
+** Finished place_detail 
+Routing using eGR in eGR->NR Step.
+Started Early Global Route kernel 
+Finished Early Global Route kernel
+
+#####
+CCOPT: Preparing to route 16480 clock nets with NanoRoute
+Clock detailed routing.
+route_global_detail
+Start route_global_detail
+
+route_global_detail - Uses the NanoRoute router to perform both global and detailed routing with one command
+
+Start connecting MustJoinAllPort pins ...
+#Start routing data preparation
+
+#Bottom routing layer index=2(M1), bottom routing layer for shielding=4(M3), bottom shield layer=7(M6) top shield layer=18(M17)
+
+#shield_bottom_stripe_layer=4(M3), shield_top_stripe_layer=18(M17
+
+start initial via pillar insertion iteration
+
+#16480 nets selected
+
+Routing starts for clock nets 
+Global route 
+3 itreations each itreations has 4 loops 
+
+Line assignment (track assignment)
+
+
+
+#Start Detail Routing
+After completing the detailed routing optimization starts to reduce the violation DRC
+#start 1st optimization iteration
+start 20th optimization iteration
+Total 20 optimization iteration happened to fix the DRC 
+#Complete Detail Routing
+
+Antenna Fixing
+#start routing for process antenna violation fix 
+
+- start antenna fix number of process antenna vio = 52879.
+#- start antenna fix number of net violated process antenna rule = 2628
+# start diode insertion for process antenna violation fix
+14554 diode(s) added
+start antenna fix number of process antenna vio = 17.
+#- start antenna fix number of net violated process antenna rule = 6
+#Analyzing shielding information.
+Total shield net = 4290 (one-side = 0, hf = 0 ), 4290 nets need to be shielded
+Start shielding step 1
+tart shielding step 2 
+
+#    Inner loop #1
+#    Inner loop #2
+#    Inner loop #3
+#  Finished shielding step 2:
+ Finished shielding step 4
+4 iterations of shielding done 
+#Done Shielding: 
+ NanoRoute done
+Clock detailed routing done.
+CCOPT: Done with clock implementation routing.
+
+ CCOpt::Phase::Routing done
+CCOpt::Phase::PostConditioning.
+
+PostConditioning active optimizations:
+ - DRV fixing with initial upsizing, sizing and buffering
+- Skew fixing with sizing
+PostConditioning Upsizing To Fix DRVs.
+Fixing clock tree DRVs with upsizing
+PostConditioning Fixing DRVs done
+
+ Buffering to fix DRVs
+Rebuffering to fix clock tree DRVs: ...20% ...40% ...60% ...80% ...100% 
+Inserted 64 buffers and inverters
+Buffering to fix DRVs done
+PostConditioning Fixing Skew by cell sizing.
+PostConditioning Fixing Skew by cell sizing done
+** Starting place_detail
+** Finished place_detail 
+PostConditioning done
+ CCOpt::Phase::PostConditioning done
+Post-balance tidy up or trial balance steps done
+Synthesizing clock trees done.
+
+*** CTS #1 [finish] (clock_opt_design #1)
+Begin: Reorder Scan Chains
+
+*** InitOpt #1 [begin] (clock_opt_design #1)
+
+**opt_design
+opt_design -post_cts
+
+ InitOpt #1 [finish] (clock_opt_design #1) 
+
+Begin: GigaOpt Route Type Constraints Refinement
+* CongRefineRouteType #1 [begin] (clock_opt_design #1) 
+* CongRefineRouteType #1 [finish] (clock_opt_design #1)
+End: GigaOpt Route Type Constraints Refinement
+
+Begin: GigaOpt high fanout net optimization
+*** DrvOpt #1 [begin] (clock_opt_design #1)
+* DrvOpt #1 [finish] (clock_opt_design #1)
+End: GigaOpt high fanout net optimization
+##
+*** DrvOpt #2 [begin] (clock_opt_design #1) 
+* Finish DRV Fixing 
+** Starting place_detail
+** Finished place_detail 
+End: GigaOpt DRV Optimization
+
+Begin: GigaOpt Global Optimization
+*** GlobalOpt #1 [begin] (clock_opt_design #1)
+* GigaOpt Global Opt WNS Slack -0.259  TNS Slack -923.851
+* Finish post-CTS Global Setup Fixing
+* GigaOpt Global Opt End WNS Slack -0.143  TNS Slack -268.218
+##
+Begin: GigaOpt Global Optimization
+* GlobalOpt #2 [begin] (clock_opt_design #1) :
+Finish post-CTS Global Setup Fixing 
+GigaOpt Global Opt End 
+** GlobalOpt #2 [finish] (clock_opt_design #1)
+End: GigaOpt Global Optimization
+
+Begin: Area Power Optimization
+Begin: Area Power Reclaim Optimization
+*** AreaOpt #1 [begin] (clock_opt_design #1
+End: Core Area Reclaim Optimization 
+*** AreaOpt #1 [finish] (clock_opt_design #1)
+
+Begin: GigaOpt DRV Optimization
+*** DrvOpt #3 [begin] (clock_opt_design #1)
+*** DrvOpt #3 [finish] (clock_opt_design #1)
+End: GigaOpt DRV Optimization
+
+##
+*** IncrReplace #2 [begin] (clock_opt_design #1)
+** Start incrementalPlace **
+== incrementalPlace Internal Loop 1 ==
+Starting area based congRepair
+** Starting place_detail
+** Finished place_detail
+== incrementalPlace Internal Loop 2 ==
+Starting area based congRepair
+** Starting place_detail
+** Finished place_detail
+*** IncrReplace #2 [finish] (clock_opt_design #1)
+###
+*** DrvOpt #4 [begin] (clock_opt_design #1)
+** Starting place_detail
+** Finished place_detail
+
+
+Begin: GigaOpt Optimization in TNS mode (setup)
+** TnsOpt #1 [begin] (clock_opt_design #1) 
+Optimizer TNS Opt
+OptDebug: Start of Optimizer TNS Pass
+OptDebug: Start of Optimizer TNS Pass
+Active Path Group: in2reg reg2cgate reg2out reg2reg
+** Finish Core Optimize Step 
+CCOptDebug: End of Optimizer TNS Pass:
+OptDebug: End of Setup Fixing:
+*** TnsOpt #1 [finish] (clock_opt_design #1)
+End: GigaOpt Optimization in TNS mode
+
+###
+Begin: GigaOpt Optimization in WNS mode
+** WnsOpt #1 [begin] (clock_opt_design #1) 
+Optimizer WNS Pass 0
+OptDebug: Start of Optimizer WNS Pass 0
+Active Path Group: in2reg reg2cgate reg2out reg2reg
+
+CCOptDebug: End of Optimizer WNS Pass 0
+
+Optimizer WNS Pass 1
+OptDebug: Start of Optimizer WNS Pass 1:
+Active Path Group: in2reg reg2cgate reg2out reg2reg
+ Finish Core Optimize Step
+Active Path Group: reg2cgate reg2out reg2reg
+Finish Core Optimize Step
+Active Path Group: reg2cgate
+Finish Core Optimize Step
+CCOptDebug: End of Optimizer WNS Pass 1:
+
+Optimizer WNS Pass 2
+
+OptDebug: Start of Optimizer WNS Pass 2:
+
+Optimizer WNS Pass 3
+
+OptDebug: Start of Optimizer WNS Pass 3:
+
+OptDebug: End of Setup Fixing:
+
+*** TnsOpt #2 [begin] (clock_opt_design #1) 
+Optimizer TNS Opt
+
+OptDebug: Start of Optimizer TNS Pass:
+CCOptDebug: End of Optimizer TNS Pass
+
+OptDebug: End of Setup Fixing:
+Begin: Area Power Reclaim Optimization
+
+*** AreaOpt #2 [begin] (clock_opt_design #1)
+** PowerOpt #1 [finish] (clock_opt_design #1)
+OptDebug: End of Power Reclaim:
+
+*** DrvOpt #5 [begin] (clock_opt_design #1)
+
+
+
+Starting initialization (fixHold) cpu=0:00:00.0 real=0:00:00.0 totSessionCpu=62:45:55 mem=101567.8M ***
+
+*** BuildHoldData #1 [begin] (opt_design #1) 
+
+Done excluding path group for hold, {in2reg reg2out in2out}.
+
+Reset excluded path group, in2out
+
+Reset excluded path group, in2reg
+
+Reset excluded path group, reg2out
+
+Hold Opt Initial Summary
+** BuildHoldData #1 [finish] (opt_design #1)
+
+** HoldOpt #1 [begin] (opt_design #1)
+* Starting Core Fixing (fixHold)
+Starting Phase 1 Step 1 Iter 1 
+Starting Phase 1 Step 1 Iter 2
+Starting Phase 1 Step 1 Iter 7
+
+Starting Phase 1 Step 2 
+Starting Phase 1 Step 2 Iter 1
+Starting Phase 1 Step 2 Iter 43
+Total 43 itreation is happening to fix hold 
+
+Starting Phase 2 Step 1 Iter 1
+Starting Phase 2 Step 1 Iter 14
+Phase 2 14 itreations done 
+
+Starting Phase 3 Step 1 Iter 1 
+Starting Phase 3 Step 1 Iter 10
+
+Starting Phase 4 Step 1 Iter 1
+Starting Phase 4 Step 1 Iter 10 
+
+OptDebug: End of Hold Fixing
+*** Finished Core Fixing (fixHold)
+added a total of 94819 cells to fix/reduce hold violation
+Starting place_detail
+Finished place_detail
+*** Finish Post CTS Hold Fixing 
+*** HoldOpt #1 [finish] (opt_design #1) :
+*** Finished opt_design *
+** opt_design #1 [finish] 
 
