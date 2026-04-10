@@ -1,1 +1,114 @@
+MSCTS clock tree cells count 
 
+Clock DAG stats:
+================
+
+----------------------------------------------------------
+Cell type                 Count    Area        Capacitance
+----------------------------------------------------------
+Buffers                       1       0.064       0.001
+Inverters                 26719    1470.491      30.810
+Integrated Clock Gates     8882    1266.032       8.168
+Discrete Clock Gates          0       0.000       0.000
+Clock Logic                  53       5.813       0.078
+All                       35655    2742.400      39.056
+----------------------------------------------------------
+####
+Clock DAG sink counts:
+======================
+
+--------------------------
+Sink type           Count
+--------------------------
+Regular             203283
+Enable Latch             0
+Load Capacitance         0
+Antenna Diode        12101
+Node Sink                0
+Total               215384
+--------------------------
+#####
+Clock DAG library cell distribution:
+====================================
+
+------------------------------------------------------------
+Name                         Type        Inst     Inst Area 
+                                         Count    (um^2)
+------------------------------------------------------------
+HDB54ULT03_BUF_S_4           buffer          1        0.064
+HDB54ULT03_INV_SDCY2_10      inverter      414       83.120
+HDB54ULT03_INV_SDCY2_9       inverter      435       79.396
+HDB54ULT03_INV_SDCY2_8       inverter      559       91.826
+HDB54ULT03_INV_S_7           inverter     1057       77.169
+HDB54ULT03_INV_S_6           inverter     1249       79.789
+HDB54ULT03_INV_S_5           inverter     1038       56.837
+HDB54ULT03_INV_S_4           inverter    21967     1002.354
+HDB54ULT03_CKGTPLT_V7_12     icg            16        5.549
+HDB54ULT03_CKGTPLT_V7D_12    icg            16        4.673
+HDB54ULT03_CKGTPLT_V7_9      icg            25        6.845
+HDB54ULT03_CKGTPLT_V7_8      icg           109       28.847
+HDB54ULT03_CKGTPLT_V8_8      icg           159       30.472
+HDB54ULT03_CKGTPLT_V8_6      icg           502       87.044
+HDB54ULT03_CKGTPLT_V5_4      icg             5        0.821
+HDB54ULT03_CKGTPLT_V8_4      icg          8040     1100.596
+HDB54ULT03_CKGTNLT_V8_2      icg            10        1.186
+HDB54ULT03_OR2_MM_8          logic          12        1.862
+HDB54ULT03_OR2_MM_6          logic          16        1.898
+HDB54ULT03_OR2_MM_4          logic          25        2.053
+------------------------------------------------------------
+#####
+Clock Tree Summary:
+===================
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Clock Tree       Clock  Bufs  Invs   Other  Max       Max     Max       Max          Standard   Wire     Gate     Clock Tree Root
+Name             Gates               Clock  Non-leaf  Leaf    Length    Source-sink  cell area  cap      cap      
+                                     Cells  Fanout    Fanout  (um)      Resistance   (um^2)     (pF)     (pF)     
+                                                                        (Ohms)                                    
+-----------------------------------------------------------------------------------------------------------------------------------
+core_clk         8838    0    26599   53       56       56    194.119    16281       2724.896   108.619  160.770  clk
+core_clk_tap_0      3    0        4    1        3       44     73.103     8008          0.730     0.075    0.027  core_clk_tap_0/X
+core_clk_tap_1      4    0        7    1        4       39     59.687     7338.95       1.196     0.100    0.041  core_clk_tap_1/X
+core_clk_tap_10    20    0       47    1        9       49     78.9165    8411.77       5.832     0.570    0.334  core_clk_tap_10/X
+core_clk_tap_11    34    0       68    1       10       55     67.921     9018.66       9.400     0.829    0.497  core_clk_tap_11/X
+core_clk_tap_12    24    0       69    1        8       54     79.5615    8456.49       7.374     0.678    0.496  core_clk_tap_12/X
+core_clk_tap_13    20    0       73    1        7       53     75.0305    9198.18       7.702     0.778    0.426  core_clk_tap_13/X
+core_clk_tap_14    17    0       55    1        6       56     67.343     9786.55       6.151     0.569    0.313  core_clk_tap_14/X
+core_clk_tap_15    19    0       39    1        8       44     89.86      8721.94       5.293     0.415    0.233  core_clk_tap_15/X
+core_clk_tap_16    13    0       22    1       10       43     85.2145    8201.56       3.002     0.306    0.155  core_clk_tap_16/X
+core_clk_tap_17    34    0      112    1        9       51    122.923    10536.6       11.800     1.420    0.858  core_clk_tap_17/X
+core_clk_tap_18    68    0      445    2       11       53    125.647    13324.2       31.448     1.605    1.461  core_clk_tap_18/X
+core_clk_tap_19    24    0      166    2        9       50     99.365     9132.85      12.722     0.778    0.553  core_clk_tap_19/X
+core_clk_tap_2      3    0        6    1        3       46     56.0995    6184.01       0.894     0.070    0.030  core_clk_tap_2/X
+core_clk_tap_20    35    0       45    2       10       43     69.475     9078.58       8.168     0.638    0.398  core_clk_tap_20/X
+core_clk_tap_21    80    0      121    2       12       51    105.497    10536.5       20.716     1.292    1.253  core_clk_tap_21/X
+core_clk_tap_22    16    0       94    1       11       49    194.119    11700.6        8.131     1.396    0.809  core_clk_tap_22/X
+core_clk_tap_23     5    0       38    1        6       48     87.195    11127.1        2.838     0.559    0.301  core_clk_tap_23/X
+core_clk_tap_24    10    0       27    1        7       45     81.093     9060.76       3.094     0.300    0.254  core_clk_tap_24/X
+core_clk_tap_25    10    0      214    1        8       52     99.285    11136.4       14.136     1.068    0.767  core_clk_tap_25/X
+core_clk_tap_26    37    0     1676    2        9       44     96.803    11732.4       84.516     2.278    2.987  core_clk_tap_26/X
+core_clk_tap_27   107    0     1067    2       10       49     88.435    11955.1       66.665     2.003    2.564  core_clk_tap_27/X
+core_clk_tap_28    15    0       84    1        8       51     76.4145   13497          6.808     1.116    0.530  core_clk_tap_28/X
+core_clk_tap_29    64    0      330    1        9       46     92.0585   12242.1       25.462     1.368    1.068  core_clk_tap_29/X
+core_clk_tap_3     36    0       13    1       12       42     79.4785    8260.5        5.759     0.242    0.169  core_clk_tap_3/X
+core_clk_tap_30   117    0     1428    1       12       53    118.369    14946.2       85.447     3.677    3.358  core_clk_tap_30/X
+core_clk_tap_31   426    0      838    0       13       42     54.4245   11655.5       97.895     2.834    6.825  core_clk_tap_31/X
+core_clk_tap_32    70    0      111    0       13       41     97.002    10657.4       21.154     0.906    1.901  core_clk_tap_32/X
+core_clk_tap_33     8    0      255    0        8       47     87.1565    9965.61      13.853     0.949    0.548  core_clk_tap_33/X
+core_clk_tap_34   229    0     1363    1       13       49    113.197    13718.2       99.994     5.542    4.324  core_clk_tap_34/X
+core_clk_tap_35   163    0     1123    1       12       42     93.651    14330.4       75.655     3.137    3.000  core_clk_tap_35/X
+core_clk_tap_36   197    0      787    0       13       44     98.915    15826.6       66.237     3.045    3.065  core_clk_tap_36/X
+core_clk_tap_37   264    0     1728    1       13       39     64.6565   12528.2      119.377     4.044    5.390  core_clk_tap_37/X
+core_clk_tap_38   305    0     1250    0       13       41     87.837    11667.5      105.059     3.670    5.486  core_clk_tap_38/X
+core_clk_tap_39   807    0      536    0       12       34     65.163    14058.6      153.399     5.000   13.926  core_clk_tap_39/X
+core_clk_tap_4      3    0        6    1        3       45     71.609     6048.67       0.821     0.067    0.029  core_clk_tap_4/X
+core_clk_tap_40   260    0       56    0       12       32     85.6785   11245.6       40.081     0.560    0.816  core_clk_tap_40/X
+core_clk_tap_41   827    0      868    0       13       32     46.865    15998.8      178.879     6.390   14.212  core_clk_tap_41/X
+core_clk_tap_42   268    0      874    0       12       38     81.5845   12526.8       85.520     3.964    7.775  core_clk_tap_42/X
+core_clk_tap_43    28    0     1543    1        9       40     58.925    10975.1       74.477     2.186    2.349  core_clk_tap_43/X
+core_clk_tap_44   733    0     1339    1       13       40     89.63     14081        171.852     6.376    8.335  core_clk_tap_44/X
+core_clk_tap_45   320    0     2392    0       13       47    106.365    15582.6      175.913     6.622   10.182  core_clk_tap_45/X
+core_clk_tap_46   414    0     1583    1       12       39     79.239    14199.2      208.876     9.536   19.895  core_clk_tap_46/X
+core_clk_tap_47   708    0      760    1       15       34     83.119    13929.2      157.350     5.118   10.455  core_clk_tap_47/X
+core_clk_tap_48   171    0       51    1       12       50     91.893     8921.68      27.049     0.563    0.454  core_clk_tap_48/X
+#####
