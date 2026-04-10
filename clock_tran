@@ -1,1 +1,39 @@
+Clock tran initial count : 627 ; above 5ps : 348 ; top violated ; 111ps 
+Guidance for fixing the clk Tran :  
+Conform the threshold value (means) up to which magnitude the violations need to be fixed 
+Use only clk buffers and clk inverters to fix the clk Tran 
+VT swaps is not allowed in fixing the clock Tran only upsize is allowed 
+Only use allowed clock buffers ,inverters and clk gates to fix the clk Tran 
+For upsizing fanout splitting and on route buffering only allowed clk buffers and inverters should be used 
+
+Checks before fixing the clk Tran:
+Check the ……. of the violated driver (BUF & INV & CLK_GATE)
+Net length 
+Fanout 
+Routing layer 
+Drive strength 
+
+Clock Tran fixing methods:
+Upsize the driver 
+Fanout splitting (location based )
+On route buffering 
+Layer optimization 
+On route buffering (location based )
+Downsizing the load of the driver 
+
+Impacts of timing due to clock Tran fixes :
+Fixing the clock Tran will degrade the timing (setup & hold)  >> HOW? WHY? 
+What happens if we insert buffer of on route buffering to fix clk tran ???
+If we are splitting the fan out for three loads the buffer which we have inserted will contribute the delay around (30 to 40ps), these delays will be added for those three loads and fanout of these loads then latency will increase in launch side  (if those drivers are from launch path ) then obviously data arrival time will increase which will violate the setup 
+
+Which is better to fix clk tran inserting buffer or pair of inverter ?
+Inserting buffer is better because if we are adding pair of inverter each INV will contribute 30ps each so in total 60ps, so over all 60ps delay will be added in violated drivers fanout if we area adding buffer only 40ps will be added so buffer is better to use 
+
+How adding buffer on the net will fix the antenna violation ? 
+
+
+Upsizing the driver  to higher drive strength  
+reduce the load of the driver it will fix the clock Tran [check the margin for the load ]
+Don’t swap the registers it will increase the clock Tran violation 
+reduce the load of the driver it will fix the clock Tran [check the margin for the load ]
 
