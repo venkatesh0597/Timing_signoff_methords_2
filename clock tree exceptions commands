@@ -1,1 +1,26 @@
+FC clock exceptions command 
+# Stop pin example
+set_clock_tree_exceptions -stop_pins [get_pins U1/CLK]
 
+# Exclude pin example
+set_clock_tree_exceptions -exclude_pins [get_pins U2/CLK]
+
+# Float pin example (specify delay)
+set_clock_tree_exceptions -float_pins [get_pins U3/CLK] -float_pin_max_delay 0.2
+
+# Non-stop pin example
+set_clock_tree_exceptions -non_stop_pins [get_pins U4/CLK]
+
+innovus clock exceptions command 
+# Stop pin
+setCTSMode -stopPin {U1/CLK}
+
+# Exclude pin
+setCTSMode -excludePin {U2/CLK}
+
+# Float pin
+setCTSMode -floatPin {U3/CLK} -floatPinMaxDelay 0.2
+
+# Non-stop pin
+setCTSMode -nonStopPin {U4/CLK}
+####
