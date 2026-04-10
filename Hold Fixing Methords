@@ -1,1 +1,21 @@
+##########
+Hold fixing methods: 
+Swapping to lower VT 
+Downsizing to lower drive strength 
+pd_pt_auto_eco -fix_hold -hold_methods {size_cell insert_buffer} -hold_slack_lesser_than -0.000 -pba_mode ex -hold_group {dwsms_clk_gen} [ it perform divergence point buffering to fix hold]
+End point buffering by checking the setup margin 
+Layer optimization [routing with lower metal layer ]
+Detouring 
+If the magnitude is (1,2,3ps) leakage recovery will help to fix the hold violation [but it will degrade RC12 UITE] 
+#######
+There is one critical scenario for hold fixes 
+Where the hold is violated in lower bucket below 6ps and we have enough setup slack to add the buffer 
+But as the magnitude is very less so swapping is preferred to fix the hold 
+While swapping HSBSVT08_BUF_D_12 to lower drive strength to fix  the hold I have observed that hold got degraded and setup got improved 
+While am inspecting those paths the instance I have swapped to lower drive strength the driver of the particular cell is HSBSVT11_ND4_MM_1 (SVT ANDGATE_X1 drive strength) 
+So in this case while downsizing the instance to fix the hold the drivers load got reduced and the drivers tran and cell delay got improved and hold violated magnitude increased  setup slack got improved 
+And the driver and load has single fanout only 
+In setup side I have 600ps of positive slack 
+And these type of paths fixed by swapping normal buffers to delay buffers and by end point buffering 
+After swapping to delay buffer also the delay improved to the driver but the delay buffer compensated the delay improvement in driver and offered few more delay to fix the hold (delay buffer offered 18ps driver delay improved from 17ps to 14ps) 
 
