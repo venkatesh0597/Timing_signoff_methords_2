@@ -1,1 +1,95 @@
+###
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:      0.825 
+*
+*       Dynamic View: hold_all_ff0p825v125c_rcworst_125.LkgPwr
+*
+*       Leakage View: hold_all_ff0p825v125c_rcworst_125.LkgPwr
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile ../reports/route/npe.power.all.rpt -no_wrap
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:     1357.19628549 	   54.6175%
+Total Switching Power:    1029.16881914 	   41.4168%
+Total Leakage Power:        98.54395421 	    3.9657%
+Total Power:              2484.90905874 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         517.2       120.7       17.32       655.2       26.37 
+Macro                              413.1       20.92       33.43       467.4       18.81 
+IO                                     0           0           0           0           0 
+Physical-Only                          0           0      0.9061      0.9061     0.03646 
+Combinational                      308.7       763.5       36.96        1109       44.63 
+Clock (Combinational)              93.65       113.7       5.685       213.1       8.575 
+Clock (Sequential)                 24.58       10.35       4.242       39.17       1.576 
+-----------------------------------------------------------------------------------------
+Total                               1357        1029       98.54        2485         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                     0.825       1357        1029       98.54        2485         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+wrck_clk                           3.447       12.66      0.4885       16.59      0.6678 
+core_clk                           118.2       124.7       9.874       252.8       10.17 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)       118.2       124.8       9.927         253       10.18 
+-----------------------------------------------------------------------------------------
+Clock: wrck_clk
+Clock Period: 0.010000 usec 
+Clock Toggle Rate:   200.0000 Mhz 
+Clock Static Probability:  0.5000
+
+Clock: core_clk
+Clock Period: 0.000606 usec 
+Clock Toggle Rate:  3300.3300 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power: npe_cfg_top_i_X_npe_tcams_top_X_i_resolution_keys_selection_tcam_X_i_resolution_keys_selection_tcam1_X_U_SAHTCS0G0K1P512X75M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_1i_3000_vwrapper_int_X_U_SAHTCS0G0K1P512X75M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3 (SAHTCS0G0K1P512X75M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3):            12.78 
+*                Highest Leakage Power: npe_cfg_top_i_X_npe_tcams_top_X_i_resolution_keys_selection_tcam_X_i_resolution_keys_selection_tcam0_X_U_SAHTCS0G0K1P512X75M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_1i_3000_vwrapper_int_X_U_SAHTCS0G0K1P512X75M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3 (SAHTCS0G0K1P512X75M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3):             1.29 
+*          Total Cap:      7.68149e-09 F
+*          Total instances in design: 5573133
+*          Total instances in design with no power: 1735362
+*          Total instances in design with no activity:     6
+*          Total Fillers and Decap: 3619541
+-----------------------------------------------------------------------------------------
 
