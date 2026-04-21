@@ -1,1 +1,223 @@
+Skew Group Structure:
+=====================
+
+----------------------------------------------------------------------------------------------
+Skew Group                                 Sources    Constrained Sinks    Unconstrained Sinks
+----------------------------------------------------------------------------------------------
+core_clk/all_ss0p675v0c_cworst_T_0            1            200002                 14544
+core_clk/all_ss0p675v125c_rcworst_T_125       1            200002                 14544
+wrck_clk/all_ss0p675v0c_cworst_T_0            1              9814                  3435
+wrck_clk/all_ss0p675v125c_rcworst_T_125       1              9814                  3435
+----------------------------------------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner                            Skew Group                                 ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ss0p675v125c_rcworst_T_125:both.early    core_clk/all_ss0p675v0c_cworst_T_0             -        0.280     0.347     0.322        0.011       ignored                  -         0.067              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.280     0.347     0.322        0.011       ignored                  -         0.067              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.280     0.332     0.320        0.011       ignored                  -         0.052              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.280     0.332     0.320        0.011       ignored                  -         0.052              -
+ss0p675v125c_rcworst_T_125:both.late     core_clk/all_ss0p675v0c_cworst_T_0         none         0.299     0.372     0.344        0.012       explicit            *0.050         0.073    97.6% {0.314, 0.364}
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    none         0.299     0.372     0.344        0.012       explicit            *0.050         0.073    97.6% {0.314, 0.364}
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         none         0.298     0.353     0.340        0.012       explicit            *0.050         0.055    99.7% {0.303, 0.353}
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    none         0.298     0.353     0.340        0.012       explicit            *0.050         0.055    99.7% {0.303, 0.353}
+ss0p675v0c_cworst_T_0:both.early         core_clk/all_ss0p675v0c_cworst_T_0             -        0.289     0.357     0.332        0.012       ignored                  -         0.068              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.289     0.357     0.332        0.012       ignored                  -         0.068              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.291     0.343     0.330        0.011       ignored                  -         0.052              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.291     0.343     0.330        0.011       ignored                  -         0.052              -
+ss0p675v0c_cworst_T_0:both.late          core_clk/all_ss0p675v0c_cworst_T_0             -        0.309     0.382     0.354        0.012       ignored                  -         0.073              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.309     0.382     0.354        0.012       ignored                  -         0.073              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.310     0.365     0.351        0.012       ignored                  -         0.055              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.310     0.365     0.351        0.012       ignored                  -         0.055              -
+ss0p675v0c_rcworst_T_0:both.early        core_clk/all_ss0p675v0c_cworst_T_0             -        0.279     0.346     0.321        0.011       ignored                  -         0.066              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.279     0.346     0.321        0.011       ignored                  -         0.066              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.281     0.332     0.319        0.011       ignored                  -         0.050              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.281     0.332     0.319        0.011       ignored                  -         0.050              -
+ss0p675v0c_rcworst_T_0:both.late         core_clk/all_ss0p675v0c_cworst_T_0             -        0.298     0.369     0.342        0.012       ignored                  -         0.071              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.298     0.369     0.342        0.012       ignored                  -         0.071              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.298     0.352     0.339        0.011       ignored                  -         0.053              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.298     0.352     0.339        0.011       ignored                  -         0.053              -
+ff0p825v125c_rcworst_125:both.early      core_clk/all_ss0p675v0c_cworst_T_0             -        0.222     0.285     0.261        0.009       ignored                  -         0.063              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.222     0.285     0.261        0.009       ignored                  -         0.063              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.227     0.277     0.262        0.010       ignored                  -         0.050              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.227     0.277     0.262        0.010       ignored                  -         0.050              -
+ff0p825v125c_rcworst_125:both.late       core_clk/all_ss0p675v0c_cworst_T_0             -        0.237     0.301     0.278        0.010       ignored                  -         0.064              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.237     0.301     0.278        0.010       ignored                  -         0.064              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.241     0.292     0.277        0.010       ignored                  -         0.052              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.241     0.292     0.277        0.010       ignored                  -         0.052              -
+ss0p675v0c_cworst_0:hold.early           core_clk/all_ss0p675v0c_cworst_T_0             -        0.302     0.374     0.348        0.012       ignored                  -         0.072              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.302     0.374     0.348        0.012       ignored                  -         0.072              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.306     0.362     0.347        0.012       ignored                  -         0.056              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.306     0.362     0.347        0.012       ignored                  -         0.056              -
+ss0p675v0c_cworst_0:hold.late            core_clk/all_ss0p675v0c_cworst_T_0             -        0.321     0.399     0.370        0.013       ignored                  -         0.077              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.321     0.399     0.370        0.013       ignored                  -         0.077              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.324     0.383     0.368        0.012       ignored                  -         0.059              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.324     0.383     0.368        0.012       ignored                  -         0.059              -
+ff0p825v125c_rcbest_125:hold.early       core_clk/all_ss0p675v0c_cworst_T_0             -        0.210     0.261     0.241        0.008       ignored                  -         0.050              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.210     0.261     0.241        0.008       ignored                  -         0.050              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.212     0.251     0.241        0.008       ignored                  -         0.040              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.212     0.251     0.241        0.008       ignored                  -         0.040              -
+ff0p825v125c_rcbest_125:hold.late        core_clk/all_ss0p675v0c_cworst_T_0             -        0.226     0.282     0.260        0.009       ignored                  -         0.056              -
+                                         core_clk/all_ss0p675v125c_rcworst_T_125        -        0.226     0.282     0.260        0.009       ignored                  -         0.056              -
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0             -        0.227     0.270     0.259        0.009       ignored                  -         0.043              -
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125        -        0.227     0.270     0.259        0.009       ignored                  -         0.043              -
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner                            Skew Group                                 Min ID    PathID    Max ID    PathID
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ss0p675v125c_rcworst_T_125:both.early    core_clk/all_ss0p675v0c_cworst_T_0         0.280        1      0.347        2
+-    min npe_cfg_top_i_X_npe_mem_top_X_npe_lvr5_macro_cfg_X_mem_block_X_sp_X_pwrapper_y63_0_x124_0_X_mem_X_rd_data_reg_reg_1__124_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.280       25      0.347       26
+-    min npe_cfg_top_i_X_npe_mem_top_X_npe_lvr5_macro_cfg_X_mem_block_X_sp_X_pwrapper_y63_0_x124_0_X_mem_X_rd_data_reg_reg_1__124_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.280       49      0.332       50
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_controller49_X_U_SASRLS0G0D2P192X182M2B2W0C1P0D0R1RM4RW10H0MS0N3_1i_3101_vwrapper_dc_X_piped_err_data_r_reg_33_mb_to_30_/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.280       73      0.332       74
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_controller49_X_U_SASRLS0G0D2P192X182M2B2W0C1P0D0R1RM4RW10H0MS0N3_1i_3101_vwrapper_dc_X_piped_err_data_r_reg_33_mb_to_30_/CK
+ss0p675v125c_rcworst_T_125:both.late     core_clk/all_ss0p675v0c_cworst_T_0         0.299        3      0.372        4
+-    min i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__0__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__0_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.299       27      0.372       28
+-    min i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__0__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__0_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.298       51      0.353       52
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_controller11_X_U_SASRLS0G0D2P192X177M2B2W0C1P0D0R1RM4RW10H0MS0N3_1i_3101_vwrapper_dc_X_error_r_reg_4_mb_to_1_/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.298       75      0.353       76
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_controller11_X_U_SASRLS0G0D2P192X177M2B2W0C1P0D0R1RM4RW10H0MS0N3_1i_3101_vwrapper_dc_X_error_r_reg_4_mb_to_1_/CK
+ss0p675v0c_cworst_T_0:both.early         core_clk/all_ss0p675v0c_cworst_T_0         0.289        5      0.357        6
+-    min i_lvr_5_X_i_npe_micro_lvr_alu_X_gen_lvr_alus_2__i_npe_micro_lvr_alu_submodule_X_genblk3_i_lfsr_param_X_lfsr_reg_11_mb_to_8_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.289       29      0.357       30
+-    min i_lvr_5_X_i_npe_micro_lvr_alu_X_gen_lvr_alus_2__i_npe_micro_lvr_alu_submodule_X_genblk3_i_lfsr_param_X_lfsr_reg_11_mb_to_8_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.291       53      0.343       54
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_traps_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X97M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_ieee1500_pipe_X_WSI_pos_r_reg/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.291       77      0.343       78
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_traps_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X97M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_ieee1500_pipe_X_WSI_pos_r_reg/CK
+ss0p675v0c_cworst_T_0:both.late          core_clk/all_ss0p675v0c_cworst_T_0         0.309        7      0.382        8
+-    min i_lvr_5_X_i_npe_micro_lvr_alu_X_gen_lvr_alus_2__i_npe_micro_lvr_alu_submodule_X_genblk3_i_lfsr_param_X_lfsr_reg_11_mb_to_8_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.309       31      0.382       32
+-    min i_lvr_5_X_i_npe_micro_lvr_alu_X_gen_lvr_alus_2__i_npe_micro_lvr_alu_submodule_X_genblk3_i_lfsr_param_X_lfsr_reg_11_mb_to_8_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.310       55      0.365       56
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_resolution_keys_selection_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P512X75M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3x2_processor_ieee1500_pipe_X_WSI_pos_r_reg/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.310       79      0.365       80
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_resolution_keys_selection_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P512X75M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3x2_processor_ieee1500_pipe_X_WSI_pos_r_reg/CK
+ss0p675v0c_rcworst_T_0:both.early        core_clk/all_ss0p675v0c_cworst_T_0         0.279        9      0.346       10
+-    min npe_cfg_top_i_X_npe_mem_top_X_npe_lvr5_macro_cfg_X_mem_block_X_sp_X_pwrapper_y63_0_x124_0_X_mem_X_rd_data_reg_reg_1__124_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.279       33      0.346       34
+-    min npe_cfg_top_i_X_npe_mem_top_X_npe_lvr5_macro_cfg_X_mem_block_X_sp_X_pwrapper_y63_0_x124_0_X_mem_X_rd_data_reg_reg_1__124_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.281       57      0.332       58
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_controller39_X_U_SASRLS0G0D2P192X182M2B2W0C1P0D0R1RM4RW10H0MS0N3_1i_3101_vwrapper_dc_X_error_r_reg_13_mb_to_10_/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.281       81      0.332       82
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_controller39_X_U_SASRLS0G0D2P192X182M2B2W0C1P0D0R1RM4RW10H0MS0N3_1i_3101_vwrapper_dc_X_error_r_reg_13_mb_to_10_/CK
+ss0p675v0c_rcworst_T_0:both.late         core_clk/all_ss0p675v0c_cworst_T_0         0.298       11      0.369       12
+-    min npe_cfg_top_i_X_npe_mem_top_X_npe_lvr5_macro_cfg_X_mem_block_X_sp_X_pwrapper_y63_0_x124_0_X_mem_X_rd_data_reg_reg_1__124_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.298       35      0.369       36
+-    min npe_cfg_top_i_X_npe_mem_top_X_npe_lvr5_macro_cfg_X_mem_block_X_sp_X_pwrapper_y63_0_x124_0_X_mem_X_rd_data_reg_reg_1__124_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.298       59      0.352       60
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_controller39_X_U_SASRLS0G0D2P192X182M2B2W0C1P0D0R1RM4RW10H0MS0N3_1i_3101_vwrapper_dc_X_error_r_reg_177_mb_to_174_/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.298       83      0.352       84
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_controller39_X_U_SASRLS0G0D2P192X182M2B2W0C1P0D0R1RM4RW10H0MS0N3_1i_3101_vwrapper_dc_X_error_r_reg_177_mb_to_174_/CK
+ff0p825v125c_rcworst_125:both.early      core_clk/all_ss0p675v0c_cworst_T_0         0.222       13      0.285       14
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lvr1_reg_tcam1/i_tcam_multycycle_source_X_en_dly_reg_1_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_mem_top_X_npe_data_bus_holder_X_wr_data_q1_reg_1462_mb_to_1459_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.222       37      0.285       38
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lvr1_reg_tcam1/i_tcam_multycycle_source_X_en_dly_reg_1_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_mem_top_X_npe_data_bus_holder_X_wr_data_q1_reg_1462_mb_to_1459_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.227       61      0.277       62
+-    min i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_bist_err_r_reg_i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_inst_err_r_reg_1__i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_inst_err_r_reg_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_keys_selection_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X42M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_tbox_r_reg_395_mb_to_392_/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.227       85      0.277       86
+-    min i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_bist_err_r_reg_i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_inst_err_r_reg_1__i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_inst_err_r_reg_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_keys_selection_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X42M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_tbox_r_reg_395_mb_to_392_/CK
+ff0p825v125c_rcworst_125:both.late       core_clk/all_ss0p675v0c_cworst_T_0         0.237       15      0.301       16
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lvr1_reg_tcam1/i_tcam_multycycle_source_X_en_dly_reg_1_mb_to_0_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.237       39      0.301       40
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lvr1_reg_tcam1/i_tcam_multycycle_source_X_en_dly_reg_1_mb_to_0_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.241       63      0.292       64
+-    min i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_bist_err_r_reg_i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_inst_err_r_reg_1__i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_inst_err_r_reg_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_keys_selection_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X42M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_tbox_r_reg_395_mb_to_392_/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.241       87      0.292       88
+-    min i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_bist_err_r_reg_i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_inst_err_r_reg_1__i_npe_macro_mbist_box_X_controller21_X_U_SACULS0G0D1P64X102M2B1W0C1P0D0R1RM4RW11H0MS0N3_2i_3101_vwrapper_dc_X_inst_err_r_reg_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_keys_selection_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X42M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_tbox_r_reg_395_mb_to_392_/CK
+ss0p675v0c_cworst_0:hold.early           core_clk/all_ss0p675v0c_cworst_T_0         0.302       17      0.374       18
+-    min i_lvr_5_X_i_npe_micro_lvr_alu_X_gen_lvr_alus_2__i_npe_micro_lvr_alu_submodule_X_genblk3_i_lfsr_param_X_lfsr_reg_11_mb_to_8_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.302       41      0.374       42
+-    min i_lvr_5_X_i_npe_micro_lvr_alu_X_gen_lvr_alus_2__i_npe_micro_lvr_alu_submodule_X_genblk3_i_lfsr_param_X_lfsr_reg_11_mb_to_8_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.306       65      0.362       66
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_traps_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X97M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_ieee1500_pipe_X_WSI_pos_r_reg/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.306       89      0.362       90
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_traps_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X97M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_ieee1500_pipe_X_WSI_pos_r_reg/CK
+ss0p675v0c_cworst_0:hold.late            core_clk/all_ss0p675v0c_cworst_T_0         0.321       19      0.399       20
+-    min i_lvr_5_X_i_npe_micro_lvr_alu_X_gen_lvr_alus_2__i_npe_micro_lvr_alu_submodule_X_genblk3_i_lfsr_param_X_lfsr_reg_11_mb_to_8_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.321       43      0.399       44
+-    min i_lvr_5_X_i_npe_micro_lvr_alu_X_gen_lvr_alus_2__i_npe_micro_lvr_alu_submodule_X_genblk3_i_lfsr_param_X_lfsr_reg_11_mb_to_8_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.324       67      0.383       68
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_traps_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X97M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_ieee1500_pipe_X_WSI_pos_r_reg/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.324       91      0.383       92
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_traps_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X97M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_ieee1500_pipe_X_WSI_pos_r_reg/CK
+ff0p825v125c_rcbest_125:hold.early       core_clk/all_ss0p675v0c_cworst_T_0         0.210       21      0.261       22
+-    min i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__0__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__0_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.210       45      0.261       46
+-    min i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__0__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__0_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.212       69      0.251       70
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_keys_selection_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X42M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_tbox_r_reg_275_mb_to_272_/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.212       93      0.251       94
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_keys_selection_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P256X42M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_tbox_r_reg_275_mb_to_272_/CK
+ff0p825v125c_rcbest_125:hold.late        core_clk/all_ss0p675v0c_cworst_T_0         0.226       23      0.282       24
+-    min i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__0__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__0_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         core_clk/all_ss0p675v125c_rcworst_T_125    0.226       47      0.282       48
+-    min i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_2__0__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__1__i_lvr_0_X_i_lvr_alu_X_i_reduced_alu_padding_delay_reg_X_num_gt1_gen_data_dly_reg_1__0_/CK
+-    max i_lac_X_i_ktx_c_X_out_next_ip_lacg_lvl2_X_out_data_reg_0__25_/CK
+                                         wrck_clk/all_ss0p675v0c_cworst_T_0         0.227       71      0.270       72
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_processor_X_U_npe_processor_tbox_fsm_X_tbox_r_reg_99_mb_to_96_/CK
+                                         wrck_clk/all_ss0p675v125c_rcworst_T_125    0.227       95      0.270       96
+-    min npe_cfg_top_i_X_npe_tcams_top_X_i_lookup_core_tcam_X_i_tcam_mbist_processor_X_U_SAHTCS0G0K1P128X140M1B1W1C0P0D0T1RM3RW00ZH1H0PP0PK12VME0LOS0N3_processor_bist_X_delay_cntr_r_reg_3_mb_to_0_/CK
+-    max i_npe_macro_mbist_box_X_processor_X_U_npe_processor_tbox_fsm_X_tbox_r_reg_99_mb_to_96_/CK
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
