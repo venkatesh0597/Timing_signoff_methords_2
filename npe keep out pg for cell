@@ -1,1 +1,92 @@
+PG keepout report file
+
+==========================================
+cell : HDB54ULTLL03_AOAI211_1 
+total number of PG keepouts in cell : 1 
+------------------------------------------
+layer=M1, keepoutBox=[0.0000 : 0.0000 , 0.2700 : 0.1690]
+
+==========================================
+cell : HDB54ULT03_AOAI211_1 
+total number of PG keepouts in cell : 1 
+------------------------------------------
+layer=M1, keepoutBox=[0.0000 : 0.0000 , 0.2700 : 0.1690]
+
+==========================================
+cell : HDB54SVT03_AOAI211_1 
+total number of PG keepouts in cell : 1 
+------------------------------------------
+layer=M1, keepoutBox=[0.0000 : 0.0000 , 0.2700 : 0.1690]
+
+==========================================
+cell : HDB54LVTLL03_AOAI211_1 
+total number of PG keepouts in cell : 1 
+------------------------------------------
+layer=M1, keepoutBox=[0.0000 : 0.0000 , 0.2700 : 0.1690]
+
+==========================================
+cell : HDB54LVT03_AOAI211_1 
+total number of PG keepouts in cell : 1 
+------------------------------------------
+layer=M1, keepoutBox=[0.0000 : 0.0000 , 0.2700 : 0.1690]
+
+==========================================
+cell : HDB54ELT03_AOAI211_1 
+total number of PG keepouts in cell : 1 
+------------------------------------------
+layer=M1, keepoutBox=[0.0000 : 0.0000 , 0.2700 : 0.1690]
+
+==========================================
+cell : HDB54ULTLL03_AOI2222_MMY2_4 
+total number of PG keepouts in cell : 4 
+------------------------------------------
+layer=M1, keepoutBox=[0.2830 : 0.0405 , 0.3110 : 0.0805]
+layer=M1, keepoutBox=[0.0670 : 0.0165 , 0.0950 : 0.0565]
+layer=M1, keepoutBox=[0.4390 : 0.0775 , 0.6410 : 0.0915]
+layer=M1, keepoutBox=[0.5530 : 0.1125 , 0.5810 : 0.3215]
+
+==========================================
+cell : HDB54ULT03_AOI2222_MMY2_4 
+total number of PG keepouts in cell : 4 
+------------------------------------------
+layer=M1, keepoutBox=[0.2830 : 0.0405 , 0.3110 : 0.0805]
+layer=M1, keepoutBox=[0.0670 : 0.0165 , 0.0950 : 0.0565]
+layer=M1, keepoutBox=[0.4390 : 0.0775 , 0.6410 : 0.0915]
+layer=M1, keepoutBox=[0.5530 : 0.1125 , 0.5810 : 0.3215]
+
+==========================================
+cell : HDB54SVT03_AOI2222_MMY2_4 
+total number of PG keepouts in cell : 4 
+------------------------------------------
+layer=M1, keepoutBox=[0.2830 : 0.0405 , 0.3110 : 0.0805]
+layer=M1, keepoutBox=[0.0670 : 0.0165 , 0.0950 : 0.0565]
+layer=M1, keepoutBox=[0.4390 : 0.0775 , 0.6410 : 0.0915]
+layer=M1, keepoutBox=[0.5530 : 0.1125 , 0.5810 : 0.3215]
+
+==========================================
+cell : HDB54LVTLL03_AOI2222_MMY2_4 
+total number of PG keepouts in cell : 4 
+------------------------------------------
+layer=M1, keepoutBox=[0.2830 : 0.0405 , 0.3110 : 0.0805]
+layer=M1, keepoutBox=[0.0670 : 0.0165 , 0.0950 : 0.0565]
+layer=M1, keepoutBox=[0.4390 : 0.0775 , 0.6410 : 0.0915]
+layer=M1, keepoutBox=[0.5530 : 0.1125 , 0.5810 : 0.3215]
+
+==========================================
+cell : HDB54LVT03_AOI2222_MMY2_4 
+total number of PG keepouts in cell : 4 
+------------------------------------------
+layer=M1, keepoutBox=[0.2830 : 0.0405 , 0.3110 : 0.0805]
+layer=M1, keepoutBox=[0.0670 : 0.0165 , 0.0950 : 0.0565]
+layer=M1, keepoutBox=[0.4390 : 0.0775 , 0.6410 : 0.0915]
+layer=M1, keepoutBox=[0.5530 : 0.1125 , 0.5810 : 0.3215]
+
+==========================================
+cell : HDB54ELT03_AOI2222_MMY2_4 
+total number of PG keepouts in cell : 4 
+------------------------------------------
+layer=M1, keepoutBox=[0.2830 : 0.0405 , 0.3110 : 0.0805]
+layer=M1, keepoutBox=[0.0670 : 0.0165 , 0.0950 : 0.0565]
+layer=M1, keepoutBox=[0.4390 : 0.0775 , 0.6410 : 0.0915]
+layer=M1, keepoutBox=[0.5530 : 0.1125 , 0.5810 : 0.3215]
 
