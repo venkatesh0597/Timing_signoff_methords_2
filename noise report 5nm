@@ -1,1 +1,142 @@
+zcat */reports/RC-011* | sed s'/.*variation//g' | awk '{print $3}' | sort -u | wc -l
+zcat */reports/RC-012* | sed s'/.*variation//g' | awk '{print $3}' | sort -u | wc -l
+zcat */reports/*UITE* | sed 's/Detected extrapolation.*Cell//g' | awk '{print $2}' | sort -u | wc -l
+less *all*/reports/debug_reports/noise.rpt > noise
+less *all*/reports/clock_tree_cells_violations.rpt > clk_tree_violators
+less *all*/reports/check_dont_use.rpt > dont_use_cell
 
+####
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+-0.022 HFSINV_4_662356/A HFSINV_23_662357/X HDBELT06_INV_CBQ_12 below_high
+-0.013 ZINV_57_inst_724145/A HFSINV_173_204577/X HDBELT06_INV_CAQSY2R_12 below_high
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+-0.018 HFSINV_4_662356/A HFSINV_23_662357/X HDBELT06_INV_CBQ_12 below_high
+-0.013 ZINV_57_inst_724145/A HFSINV_173_204577/X HDBELT06_INV_CAQSY2R_12 below_high
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+-0.029 HFSINV_4_662356/A HFSINV_23_662357/X HDBELT06_INV_CBQ_12 below_high
+-0.025 ZINV_57_inst_724145/A HFSINV_173_204577/X HDBELT06_INV_CAQSY2R_12 below_high
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================#####
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+Slack  Pin  Driver  Driver_Ref
+========================================================================================
+
+######
+RC12##
+A POCV slew  extrapolation exceeding 10% outside the library characterization range has been detected. Accuracy may be affected for timing arc with POCV slew variation, (ts05nxqslogl06hdl051f_tt0p65v85c/HDBSVT06_BUF_SM_3) ZBUF_3_inst_859303/A-->X (min positive_unate) [fall (NLDM) slew = 0.349009, lib_range = [0.0022455 0.316](nS)]
+A POCV slew  extrapolation exceeding 10% outside the library characterization range has been detected. Accuracy may be affected for timing arc with POCV slew variation, (ts05nxqllogl06hdl051f_tt0p65v85c/HDBLVT06_BUF_1) ropt_mt_inst_1202709/A-->X (min positive_unate) [rise (NLDM) slew = 0.362167, lib_range = [0.0022455 0.316](nS)]
+A POCV slew  extrapolation exceeding 10% outside the library characterization range has been detected. Accuracy may be affected for timing arc with POCV slew variation, (ts05nxqwlogl06hdl051f_tt0p65v85c/HDBULTLL06_BUF_L_3) ropt_mt_inst_1203846/A-->X (min positive_unate) [fall (NLDM) slew = 0.354945, lib_range = [0.0022455 0.316](nS)]
+A POCV slew  extrapolation exceeding 10% outside the library characterization range has been detected. Accuracy may be affected for timing arc with POCV slew variation, (ts05nxqslogl06hdl051f_tt0p65v85c/HDBSVT06_INV_2) HFSINV_206_228935/A-->X (min negative_unate) [fall (NLDM) slew = 0.349204, lib_range = [0.0022455 0.316](nS)]
+A POCV slew  extrapolation exceeding 10% outside the library characterization range has been detected. Accuracy may be affected for timing arc with POCV slew variation, (ts05nxqmlogl06hdl051f_tt0p65v85c/HDBLVTLL06_INV_1) HFSINV_14_541439/A-->X (min negative_unate) [fall (NLDM) slew = 0.350553, lib_range = [0.0022455 0.316](nS)]
+A POCV slew  extrapolation exceeding 10% outside the library characterization range has been detected. Accuracy may be affected for timing arc with POCV slew variation, (ts05nxqslogl06hdl051f_tt0p65v85c/HDBSVT06_BUF_2) gre_mt_BUF_1309_inst_1080850/A-->X (min positive_unate) [fall (NLDM) slew = 0.358457, lib_range = [0.0022455 0.316](nS)]
+###RC11##
+###UITE##
+A127645.
+copt_gre_mt_inst_1082650.
+copt_h_inst_1069631.
+copt_h_inst_1071336.
+ctmi__769739.
+ctmTdsLR_1_824412.
+ctmTdsLR_1_970423.
+HFSBUF_1500_311036.
+HFSBUF_170_270833.
+HFSBUF_171_370863.
+HFSBUF_18_275097.
+HFSBUF_226_372035.
+HFSBUF_2652_287325.
+HFSBUF_27_207673.
+HFSBUF_27_208345.
+HFSBUF_31_319856.
+HFSBUF_61_375003.
+HFSBUF_68_316002.
+HFSBUF_8_254676.
+HFSINV_10_231987.
+HFSINV_1060_356725.
+HFSINV_10948_482137.
+HFSINV_1106_556613.
+HFSINV_11067_482136.
+HFSINV_144_214204.
+HFSINV_14_657783.
+HFSINV_1490_271291.
+HFSINV_155_267899.
+HFSINV_162_339228.
+HFSINV_16_286211.
+HFSINV_237_215579.
+HFSINV_331_269980.
+HFSINV_59_194546.
+HFSINV_9_194351.
+i_reassembly_fllb_top_X_reassembly_top_i_X_reassembly_cfg_top_X_reassembly_mem_top_X_reassembly_context_table13_X_mem_block_X_tp_X_pwrapper_y1023_0_x107_54_X_vwrapper_int_top_X_U_SASULS0G4L2P1024X54M8B2W0C1P0D0R2RM4RW10E10ZH0H0MS0MG0N5_3101_vwrapper_SE_QB_dwsms_slow_buf_muxscen_X_I_LB_DWSMS_MUX2_0__X_I_LB_MUX2.
+i_reassembly_fllb_top_X_reassembly_top_i_X_reassembly_cfg_top_X_reassembly_mem_top_X_reassembly_context_table13_X_mem_block_X_tp_X_pwrapper_y1023_0_x53_0_X_vwrapper_int_top_X_U_SASULS0G4L2P1024X54M8B2W0C1P0D0R2RM4RW10E10ZH0H0MS0MG0N5_3101_vwrapper_SE_QB_dwsms_slow_buf_muxscen_X_I_LB_DWSMS_MUX2_0__X_I_LB_MUX2.
+i_reassembly_fllb_top_X_reassembly_top_i_X_reassembly_cfg_top_X_reassembly_mem_top_X_reassembly_context_table8_X_ctmi_8236.
+i_reassembly_fllb_top_X_reassembly_top_i_X_reassembly_top_mbist_box_inst0/controller52/U_SACULS0G4L2P152X104M2B1W0C1P0D0R1RM4RW10E10ZH0H0MS0MG0N5_2i_3101_vwrapper_dwsms_clock_switch_async_reset/ZINV_526_inst_949590.
+i_reassembly_fllb_top_X_reassembly_top_i_X_reassembly_top_mbist_box_inst0/MPN_BUF_141091.
+i_reassembly_fllb_top_X_reassembly_top_i_X_reassembly_top_mbist_box_inst0/MPN_BUF_141092.
+ropt_h_inst_1159724.
+ropt_h_inst_1185291.
+ropt_h_inst_1207732.
+ropt_mt_inst_1148417.
+ropt_mt_inst_1148453.
+ropt_mt_inst_1148493.
+U_DFT_TOP_IP_0/HFSINV_1850_551797.
+wrp_hold_mux_153178.
+wrp_hold_mux_153180.
+wrp_hold_mux_153182.
+wrp_hold_mux_153184.
+wrp_hold_mux_153186.
+wrp_hold_mux_153188.
+wrp_hold_mux_153192.
+ZBUF_3_inst_858164.
+ZBUF_4_inst_860261.
+ZBUF_9_inst_829184.
+ZINV_14_inst_856289.
+ZINV_251_inst_717998.
+ZINV_25_inst_949060.
+ZINV_42_inst_859436.
+ZINV_4_inst_951788.
+ZINV_89_inst_951759.
+ZINV_991_inst_713002.
+####
