@@ -1,1 +1,224 @@
+****************************************
+Report : Scan Compression Configuration
+Design : reassembly_fllb_top_macro
+Version: U-2022.12-SP5
+Date   : Sat Dec 21 06:22:59 2024
+****************************************
+
+----------------------------------------
+TEST MODE: ScanCompression_mode
+VIEW     : Specification
+----------------------------------------
+xtolerance                             High
+Inputs                                 3
+Outputs                                3
+Chain Count                          400
+Maximum Chain Length                   Unspecified
+Serialize                              disable
+Shift Power Groups                     False
+Clock mixing:                          No mix
+Insert terminal lockup:                True
+Mix internal clock driver:             False
+Add_test_retiming_flops                none
+Create PosEdge Chains:                 False
+Partition:                             default_partition
+
+###
+****************************************
+Report : Scan configuration
+Design : reassembly_fllb_top_macro
+Version: U-2022.12-SP5
+Date   : Sat Dec 21 06:22:59 2024
+****************************************
+
+----------------------------------------
+TEST MODE: all_dft
+VIEW     : Specification
+----------------------------------------
+Chain count:                           Unspecified
+Maximum scan chain length:             Unspecified
+Clock mixing:                          No mix
+Fanout Limit:                       8000
+Insert terminal lockup:                False
+Mix internal clock driver:             False
+Pipelined scan enable:                 True
+Add_test_retiming_flops                none
+Create PosEdge Chains:                 False
+Partition:                             default_partition
+Lockup type:                           latch
+Internal clocks:                       None
+Voltage mixing:                        False
+Power domain mixing:                   False
+
+Warning:No DFT Specification is Specified
+
+----------------------------------------
+TEST MODE: wrp_if
+VIEW     : Specification
+----------------------------------------
+Chain count:                           3
+Maximum scan chain length:             Unspecified
+Clock mixing:                          No mix
+Fanout Limit:                          Unspecified
+Insert terminal lockup:                True
+Mix internal clock driver:             False
+Pipelined scan enable:                 False
+Add_test_retiming_flops                none
+Create PosEdge Chains:                 False
+Partition:                             default_partition
+Lockup type:                           latch
+Internal clocks:                       None
+Voltage mixing:                        False
+Power domain mixing:                   False
+
+Warning:No DFT Specification is Specified
+####
+****************************************
+Report : Wrapper Specification
+Design : reassembly_fllb_top_macro
+Version: U-2022.12-SP5
+Date   : Sat Dec 21 06:22:59 2024
+****************************************
+
+----------------------------------------
+TEST MODE: all_dft
+VIEW     : Specification
+----------------------------------------
+Wrapper Configuration
+=====================
+Reuse Threshold:                     128
+Hier Wrapping:                         Disable
+Add Wrapper Cells To Power Domain:     Disable
+Use System Clock For Dedicated Wrapper Cells: Enable
+Gate Clock For Dedicated Wrapper Cells: Disable
+Depth Threshold:                     200
+Gate Cells:                            none
+Safe State:                            Unspecified
+Hold Mux For Shared Wrapper Cells:     Enable
+Feedthrough Wrapper Chains:            Disable
+Dedicated hier path :                  
+Dedicated Hier wrapper clock :         
+Mix Cells:                             False
+Mix With Scan Cells:                   False
+Chain count:                           0
+Input chain count:                     0
+Output chain count:                    0
+Partition:                             default_partition
+Wrapper chain maximum length:          0
+
+Boundary Cells
+==============
+Port Name          Cell Type           Port Reuse Threshold Location shift clock scan enable for WC_Q0/WC_Q1 cell exclude Paths
+===================================================================================================================================
+pvt_tdr_sout       none                      -                  -         -               -                              -
+prtn_un2fc_intr_daisy_out none               -                  -         -               -                              -
+prtn_un2fc_data_daisy_out none               -                  -         -               -                              -
+prtn_p1rst_daisy_out none                    -                  -         -               -                              -
+prtn_fc2un_ready_daisy_out none              -                  -         -               -                              -
+prtn_fc2un_data_daisy_out none               -                  -         -               -                              -
+prtn_clk_daisy_out none                      -                  -         -               -                              -
+WSO                none                      -                  -         -               -                              -
+update_dr          none                      -                  -         -               -                              -
+shift_dr           none                      -                  -         -               -                              -
+scan_mode          none                      -                  -         -               -                              -
+scan_cg_bypass     none                      -                  -         -               -                              -
+scan_at_speed      none                      -                  -         -               -                              -
+rst_sms            none                      -                  -         -               -                              -
+pvt_tdr_sin        none                      -                  -         -               -                              -
+pvt_tdr_en         none                      -                  -         -               -                              -
+prtn_un2fc_intr_daisy_in none                -                  -         -               -                              -
+prtn_un2fc_data_daisy_in none                -                  -         -               -                              -
+prtn_toggle_en     none                      -                  -         -               -                              -
+prtn_selfid[9]     none                      -                  -         -               -                              -
+prtn_selfid[8]     none                      -                  -         -               -                              -
+prtn_selfid[7]     none                      -                  -         -               -                              -
+prtn_selfid[6]     none                      -                  -         -               -                              -
+prtn_selfid[5]     none                      -                  -         -               -                              -
+prtn_selfid[4]     none                      -                  -         -               -                              -
+prtn_selfid[3]     none                      -                  -         -               -                              -
+prtn_selfid[2]     none                      -                  -         -               -                              -
+prtn_selfid[1]     none                      -                  -         -               -                              -
+prtn_selfid[0]     none                      -                  -         -               -                              -
+prtn_p1rst         none                      -                  -         -               -                              -
+prtn_iddq_mode     none                      -                  -         -               -                              -
+prtn_fc2un_ready_daisy_in none               -                  -         -               -                              -
+prtn_fc2un_data_daisy_in none                -                  -         -               -                              -
+prtn_clk           none                      -                  -         -               -                              -
+dm[2]              none                      -                  -         -               -                              -
+dm[1]              none                      -                  -         -               -                              -
+dm[0]              none                      -                  -         -               -                              -
+capture_dr         none                      -                  -         -               -                              -
+at_speed_mcp_mem_data none                   -                  -         -               -                              -
+at_speed_mcp_los_mode none                   -                  -         -               -                              -
+at_speed_mcp_dft_mode none                   -                  -         -               -                              -
+at_speed_mcp_ctrl_override none              -                  -         -               -                              -
+at_speed_mcp_conf_reg_src_mode none          -                  -         -               -                              -
+WSI                none                      -                  -         -               -                              -
+WRSTN              none                      -                  -         -               -                              -
+UpdateWR           none                      -                  -         -               -                              -
+ShiftWR            none                      -                  -         -               -                              -
+SelectWIR          none                      -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[11] none                  -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[10] none                  -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[9] none                   -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[8] none                   -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[7] none                   -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[6] none                   -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[5] none                   -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[4] none                   -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[3] none                   -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[2] none                   -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[1] none                   -                  -         -               -                              -
+REASSEMBLY_UNIT_ID[0] none                   -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[11] none                    -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[10] none                    -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[9] none                     -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[8] none                     -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[7] none                     -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[6] none                     -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[5] none                     -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[4] none                     -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[3] none                     -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[2] none                     -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[1] none                     -                  -         -               -                              -
+FLLB_TOP_UNIT_ID[0] none                     -                  -         -               -                              -
+CaptureWR          none                      -                  -         -               -                              -
+scan_test_mode0    none                      -                  -         -               -                              -
+scan_test_mode1    none                      -                  -         -               -                              -
+scan_test_mode2    none                      -                  -         -               -                              -
+wrp_toggle         none                      -                  -         -               -                              -
+spc_disable        none                      -                  -         -               -                              -
+scan_tp_mode       none                      -                  -         -               -                              -
+
+
+----------------------------------------
+TEST MODE: ScanCompression_mode
+VIEW     : Specification
+----------------------------------------
+Wrapper Configuration
+=====================
+Mix Cells:                             False
+Mix With Scan Cells:                   False
+Chain count:                           0
+Input chain count:                     0
+Output chain count:                    0
+Partition:                             default_partition
+Wrapper chain maximum length:       1000
+
+----------------------------------------
+TEST MODE: wrp_of
+VIEW     : Specification
+----------------------------------------
+Wrapper Configuration
+=====================
+Mix Cells:                             False
+Mix With Scan Cells:                   False
+Chain count:                           2
+Input chain count:                     0
+Output chain count:                    0
+Partition:                             default_partition
+Wrapper chain maximum length:          0
+1
+####
+1
 
